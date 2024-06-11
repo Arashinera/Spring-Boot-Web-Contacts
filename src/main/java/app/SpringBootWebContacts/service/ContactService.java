@@ -16,7 +16,7 @@ public class ContactService {
     @Autowired
     ContactRepository repository;
 
-    public List<Contact> getTours() {
+    public List<Contact> getContacts() {
         Iterable<Contact> iterable = repository.findAll();
         List<Contact> list =
                 StreamSupport.stream(iterable.spliterator(), false)
